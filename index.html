@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<title>Projeto BS</title>
+</head>
+
+
+
+
+
+<body>
+
+	<div class="d-flex" id="wrapper">
+		<!-- sidebar -->
+		<div id="sidebar-wrapper">
+			<div class="sidebar-heading"><img src="logo.png"><span>Opcoes</span></div>
+			<div class="list-group list-group-flush border-right">
+				<a href="#" class="list-group-item list-group-item-action"><i class="fas fa-home"></i>Home</a>
+				<a href="#" class="list-group-item list-group-item-action"><i class="fas fa-users"></i>Funcionarios</a>
+				<a href="#" class="list-group-item list-group-item-action"><i class="fas fa-box-open"></i>Produtos</a>
+				<a href="#" class="list-group-item list-group-item-action"><i class="fas fa-sitemap"></i>Categorias</a>
+				<a href="#" class="list-group-item list-group-item-action"><i
+						class="fas fa-people-carry"></i>Fornecedores</a>
+				<a href="#" class="list-group-item list-group-item-action"><i
+						class="fas fa-chart-bar"></i>Relatórios</a>
+			</div>
+		</div>
+
+		<!-- conteudo -->
+		<div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+
+				<span id="menu-toggle" class="mr-auto"><img src="logo.png" class="mx-auto d-block"></span>
+				<a class="navbar-brand" href="#" id="navbar-site-title">Painel</a>
+
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
+					aria-controls="navbar-collapse" aria-expanded="false" aria-label="Exibe navbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<form class="form-inline" id="navbar-search-form">
+						<input type="text" class="form-control form-field" id="navbar-search-field"
+							placeholder="Pesquisar">
+					</form>
+
+					<div id="navbar-profile" class="ml-auto">
+						<img
+							src="https://66.media.tumblr.com/ea01df7a78908e23eb8c25c3c77960fa/tumblr_pm9wcb9wul1wyow3s_400.jpg">
+						<span>Everton Cebolinha</span>
+					</div>
+				</div>
+
+			</nav>
+
+			<div id="content" class="container">
+				<!-- tabela -->
+				<h3 class="main-text-3">Usuarios</h3>
+				<input type="text" class="form-control form-field" placeholder="Pesquisar">
+				<table class="table bg-white">
+					<thead>
+						<tr>
+							<th class="table-col-title">#</th>
+							<th class="table-col-title">NOME</th>
+							<th class="table-col-title">SOBRENOME</th>
+							<th class="table-col-title">USUARIO</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<th>1</th>
+							<td>Pedro</td>
+							<td>Geromel</td>
+							<td>@geromito</td>
+						</tr>
+
+						<tr>
+							<th>2</th>
+							<td>Pedro</td>
+							<td>Geromel</td>
+							<td>@geromito</td>
+						</tr>
+
+						<tr>
+							<th>1</th>
+							<td>Pedro</td>
+							<td>Geromel</td>
+							<td>@geromito</td>
+						</tr>
+
+						<tr>
+							<th>1</th>
+							<td>Pedro</td>
+							<td>Geromel</td>
+							<td>@geromito</td>
+						</tr>
+
+						<tr>
+							<th>1</th>
+							<td>Pedro</td>
+							<td>Geromel</td>
+							<td>@geromito</td>
+						</tr>
+
+						<tr>
+							<th>1</th>
+							<td>Pedro</td>
+							<td>Geromel</td>
+							<td>@geromito</td>
+						</tr>
+
+						<tr>
+							<th>1</th>
+							<td>Pedro</td>
+							<td>Geromel</td>
+							<td>@geromito</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+				<!-- formulario -->
+				<h3 id="main-page-form-title" class="main-text-3">Novo Artigo</h3>
+				<div class="">
+					<form class="card main-form">
+						<div class="card-body main-form-body">
+
+							<div class="form-group">
+								<label>Autor</label>
+								<input class="form-field form-control" id="user-field" placeholder="Autor">
+								<hr>
+							</div>
+
+							<div class="form-group">
+								<label>Título</label>
+								<input class="form-field form-control" id="title-field" placeholder="Autor">
+								<hr>
+							</div>
+
+							<div class="form-group">
+								<label>Conteudo</label>
+								<textarea placeholder="Insira um texto qualquer" class="form-field form-control"
+									id="body-field"></textarea>
+								<hr>
+							</div>
+
+							<div class="form-group">
+								<label>Data</label>
+								<input type="date" class="form-field form-control" id="date-field">
+							</div>
+						</div>
+
+						<div class="confirm-btns card-footer">
+							<button class="btn btn-primary">Criar e add outro</button>
+							<button class="btn btn-primary">Publicar post</button>
+						</div>
+					</form>
+
+					<h3>No content</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- Importação - jQuery, Popper e JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+		$("#menu-toggle").click(function (e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+	</script>
+
+</body>
+
+</html>

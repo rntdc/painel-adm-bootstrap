@@ -1,0 +1,10 @@
+navbar-brand  -- titulo navbar
+navbar-expand -- deixar nav largura toda
+form-inline  -- renderiza o formulario em linha, sem quebras
+ml-auto  -- tudo para direita, margem total a esquerda
+d-flex -- flex permite um alinhamento de elementos
+768px representa o menor tamanho de uma tela grande
+
+
+jquery
+$("classe").toggleClass -- add class || remove class
