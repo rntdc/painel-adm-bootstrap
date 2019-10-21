@@ -167,10 +167,22 @@
 							<button class="btn btn-primary">Criar e add outro</button>
 							<button class="btn btn-primary">Publicar post</button>
 						</div>
+
+
 					</form>
 
-					<h3>No content</h3>
+
 				</div>
+
+				<h3 class="main-text-3">Vendas</h3>
+
+				<div class="card">
+					<div class="card-body">
+						<canvas id="relatorio"></canvas>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 	</div>
@@ -189,11 +201,28 @@
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 		crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart/Chart.min.js"></script>
 
 	<script>
 		$("#menu-toggle").click(function (e) {
 			e.preventDefault();
 			$("#wrapper").toggleClass("toggled");
+		});
+	</script>
+
+	<script>
+		var ref = document.getElementById("relatorio").getContext('2d');
+		var chart = new Chart(ref, {
+			type: 'line',
+			data: {
+				labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+				datasets: [{
+					label: 'Vendas',
+					backgroundColor: "#5898d9ff",
+					borderColor: "#5898d9ff",
+					data: [10, 5, 4, 9, 6, 12]
+				}]
+			}
 		});
 	</script>
 
