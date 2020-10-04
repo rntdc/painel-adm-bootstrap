@@ -1,3 +1,2 @@
 # painel-adm-bootstrap
-Projeto simples com bootstrap
-Finalizado
+Painel administrativo criado para estudar alguns conceitos do bootstrap.
